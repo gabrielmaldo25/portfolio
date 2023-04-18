@@ -1,11 +1,15 @@
 %default-inputs {
   width: 100%;
-  border: 0;
-  background: #115173;
+  border: 1px solid #e3dc95;
+  border-radius: 8px;
+  background: transparent;
   height: 50px;
   font-size: 16px;
   color: #fff;
   box-sizing: border-box;
+  :focus {
+    border-color: white !important;
+  }
 }
 
 .contact-form {
@@ -49,17 +53,22 @@
     @extend %default-inputs;
     padding: 20px;
     min-height: 150px;
+    resize: none;
   }
 
   .flat-button {
-    color: #ffd700;
+    color: #a6a867;
     background: 0 0;
     font: 11px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
-    border: 1px solid #ffd700;
+    border: 1px solid #a6a867;
     float: left;
     border-radius: 4px;
+    &:hover {
+      background: #a6a867;
+      color: #333;
+    }
   }
 }

@@ -1,36 +1,38 @@
 .logo-container {
+  //background: red;
   z-index: 0;
-  width: 400px;
-  height: 600px;
   position: absolute;
-  top: 0;
-  right: 15%;
+  top: 20%;
+  right: 20%;
   bottom: 0;
   left: auto;
   margin: auto;
   opacity: 0;
-  svg {
-    width: 100%;
-    height: auto;
-    bottom: 0;
-    transform: rotateZ(30deg) !important;
-  }
 
-  .solid-logo {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
-    width: 100%;
-    opacity: 0;
-    transform: rotateZ(30deg) !important;
-    z-index: 1;
+  .legend {
+    //margin: 0 auto;
+    font-family: "Inspiration", cursive;
+    font-size: 20em;
+    font-weight: 800;
+    opacity: 0.4;
+
+    /* letter-spacing: 0.1em;
+    animation-name: rainbow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
   }
 }
 
-.svg-container {
-  stroke: #ffd700;
-  stroke-width: 10px;
+@keyframes rainbow {
+  30% {
+    text-shadow: 3px 2px 5px rgba(250, 250, 250, 0.1);
+  }
+  55% {
+    text-shadow: 3px -2px 5px white;
+    top: 0px;
+    left: -25px;
+  }
+  100% {
+    text-shadow: 3px -4px 5px rgba(255, 250, 250, 0.1);
+  }
 }

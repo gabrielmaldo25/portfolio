@@ -10,13 +10,16 @@ const Layout = () => {
       <Sidebar />
 
       <div className="page">
-        <span className="top-tags"> &lt;html&gt;</span>
-        <span className="tags top-tags"> &lt;body&gt;</span>
+        <span className="tags top-tags">
+          <span> &lt;html&gt;</span>
+          <br />
+          <span> &lt;body&gt;</span>
+        </span>
         <Outlet />
         <span className="tags bottom-tags">
-          &lt;body&gt;
+          <span>&lt;body&gt;</span>
           <br />
-          <span className="bottom-tag-html"> &lt;/html&gt;</span>
+          <span> &lt;/html&gt;</span>
         </span>
       </div>
     </div>

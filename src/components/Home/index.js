@@ -7,7 +7,7 @@ import AnimatedLetters from "../AnimatedLetters";
 import Logo from "./Logo";
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const nameArray = "Gabriel".split("");
+  const nameArray = "gabriel maldonado".split("");
   const jobArray = "jr developer".split("");
 
   return (
@@ -18,11 +18,10 @@ const Home = () => {
           <span className={`${letterClass} _12`}>i,</span>
           <br />
           <span className={`${letterClass} _13`}>I</span>
-          <span className={`${letterClass} _14`}>'m</span>
-          <span> </span>
-          {/* <img src={LogoTitle} alt="developer" /> */}
+          <span className={`${letterClass} _14`}>'m &nbsp;</span>
+
           <AnimatedLetters
-            letterClass={letterClass}
+            letterClass={`${letterClass} logo`}
             strArray={nameArray}
             idx={15}
           />
@@ -38,7 +37,7 @@ const Home = () => {
           CONTACT ME
         </Link>
       </div>
-      <Logo />
+      {/* <Logo /> */}
     </div>
   );
 };

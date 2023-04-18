@@ -1,11 +1,12 @@
 .stage-cube-cont {
   width: 50%;
   height: 100%;
-  top: 0;
-  padding-top: 18%;
   position: absolute;
-  right: 0;
   overflow: hidden;
+
+  right: 10%;
+  top: 15%;
+  padding-top: 18%;
 }
 
 .cubespinner {
@@ -69,5 +70,11 @@
   }
   80% {
     transform: rotateY(90deg) rotateZ(90deg);
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .stage-cube-cont {
+    display: none;
   }
 }

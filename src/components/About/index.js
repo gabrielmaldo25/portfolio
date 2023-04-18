@@ -32,10 +32,10 @@ const About = () => {
           enthusiast, and tech-obsessed!!!
         </p>
       </div>
-      <div className="stage-cube-cont">
+      {/* <div className="stage-cube-cont">
         <div className="cubespinner">
           <div className="face1">
-            <FontAwesomeIcon icon={faAngular} color="#DD0031" />
+            <FontAwesomeIcon icon={faJsSquare} color="#F0DB4F" />
           </div>
           <div className="face2">
             <FontAwesomeIcon icon={faHtml5} color="#F06529" />
@@ -53,7 +53,7 @@ const About = () => {
             <FontAwesomeIcon icon={faPython} color="#EC4" />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
