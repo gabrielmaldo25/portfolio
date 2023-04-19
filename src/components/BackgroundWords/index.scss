@@ -1,0 +1,47 @@
+.legend-container {
+  z-index: 0;
+  font-family: "Inspiration", cursive;
+  font-size: 35vh;
+  font-weight: 800;
+  pointer-events: none;
+  white-space: nowrap;
+  font-size-adjust: max(35vh, 30vh, 25vh, 20vh);
+  opacity: 0.3;
+  overflow: hidden;
+  .legend {
+    position: absolute;
+    //top: 50%;
+    opacity: 0;
+    animation: fadeIn 1s 0.2s, rainbow 5s 0.1ms;
+    animation-fill-mode: forwards;
+
+    @for $i from 1 through 35 {
+      &._#{$i} {
+        top: percentage($i) / 50;
+        right: percentage($i) / 12;
+        @if ($i % 2== 0) {
+          left: percentage($i) * 0.4;
+          top: percentage($i) * 0.18;
+        }
+      }
+    }
+  }
+}
+
+@keyframes rainbow {
+  30% {
+    text-shadow: 3px 2px 5px rgba(250, 250, 250, 0.1);
+  }
+  55% {
+    text-shadow: 3px -2px 5px white;
+  }
+  100% {
+    text-shadow: 3px -4px 5px rgba(255, 250, 250, 0.1);
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .legend-container {
+    display: none;
+  }
+}

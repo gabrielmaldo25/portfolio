@@ -1,13 +1,19 @@
+.full-word-container {
+  white-space: nowrap;
+}
+
 .text-animate {
   display: inline-block;
   opacity: 0;
   animation: bounceIn 1s 1s;
   animation-fill-mode: forwards;
   min-width: 10px;
+  text-size-adjust: auto;
 
   &.logo {
     font-family: "Inspiration", cursive;
-    font-size: 1.5em;
+    //font-size: 1.5em;
+    text-size-adjust: auto;
   }
 }
 

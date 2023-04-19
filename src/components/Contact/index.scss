@@ -7,9 +7,6 @@
   font-size: 16px;
   color: #fff;
   box-sizing: border-box;
-  :focus {
-    border-color: white !important;
-  }
 }
 
 .contact-form {
@@ -69,6 +66,27 @@
     &:hover {
       background: #a6a867;
       color: #333;
+    }
+  }
+}
+
+/* @media only screen and (max-width: 760px) {
+  .contact-form {
+    ul {
+      li.half {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+} */
+@media only screen and (max-width: 400px) {
+  .contact-form {
+    ul {
+      li.half {
+        width: 100%;
+        margin-left: 0;
+      }
     }
   }
 }

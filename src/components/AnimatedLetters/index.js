@@ -10,7 +10,7 @@ const AnimatedLetters = ({ letterClass, strArray, idx }) => {
     }, 4000);
   }, []);
   return (
-    <span>
+    <span className="full-word-container">
       {strArray.map((char, i) => {
         return (
           <span

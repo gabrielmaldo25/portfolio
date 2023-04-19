@@ -1,85 +1,45 @@
 .home-page {
   .text-zone {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 35%;
-    vertical-align: middle;
-    display: table-cell;
-    max-height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    h1 {
+      color: white;
+
+      &::before {
+        color: #a6a867;
+      }
+      &::after {
+        color: #a6a867;
+      }
+    }
   }
-  h1 {
-    font-size: 53px;
-    font-family: "Coolvetica";
-    color: white;
+  h2 {
+    color: #8d8d8d;
+
     font-weight: 400;
-    font-size: 53px;
-    margin-top: 0;
-    position: relative;
-    // margin-bottom: 40px;
-    left: 10px;
-
-    &::before {
-      content: "<h1>";
-      font-family: "La Belle Aurore";
-      font-size: 18px;
-      position: absolute;
-      margin-top: -10px;
-      left: -10px;
-      opacity: 0.6;
-      line-height: 18px;
-      color: #a6a867;
-    }
-    &::after {
-      content: "</h1>";
-      font-family: "La Belle Aurore";
-      font-size: 18px;
-      position: absolute;
-      margin-left: 20px;
-      left: -30px;
-      bottom: -20px;
-      opacity: 0.6;
-      line-height: 18px;
-      color: #a6a867;
-    }
-    img {
-      width: 32px;
-      margin-left: 20px;
-      opacity: 0;
-      height: auto;
-      animation: rotateIn 1s linear both;
-      animation-delay: 1.4s;
-    }
+    font-size: 0.8em;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
   }
-}
+  .flat-button {
+    width: fit-content;
+    color: #a6a867;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 10px;
+    border: 1px solid #a6a867;
 
-h2 {
-  color: #8d8d8d;
-  margin-top: 20px;
-  font-weight: 400;
-  font-size: 11px;
-  font-family: sans-serif;
-  letter-spacing: 3px;
-  animation: fadeIn 1s 1.8s backwards;
-}
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
 
-.flat-button {
-  color: #a6a867;
-  font-size: 13px;
-  font-weight: 400;
-  letter-spacing: 4px;
-  font-family: sans-serif;
-  text-decoration: none;
-  padding: 10px 10px;
-  border: 1px solid #a6a867;
-  margin-top: 25px;
-  float: left;
-  animation: fadeIn 1s 1.8s backwards;
-  white-space: nowrap;
-
-  &:hover {
-    background: #a6a867;
-    color: #333;
+    &:hover {
+      background: #a6a867;
+      color: #333;
+    }
   }
 }

@@ -11,15 +11,15 @@ const Home = () => {
   const jobArray = "jr developer".split("");
 
   return (
-    <div className="container home-page">
+    <div className="home-page">
       <div className="text-zone">
         <h1>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>i,</span>
+          <AnimatedLetters
+            letterClass={`${letterClass}`}
+            strArray={`hi, i'm`.split("")}
+            idx={15}
+          />
           <br />
-          <span className={`${letterClass} _13`}>I</span>
-          <span className={`${letterClass} _14`}>'m &nbsp;</span>
-
           <AnimatedLetters
             letterClass={`${letterClass} logo`}
             strArray={nameArray}
@@ -32,12 +32,12 @@ const Home = () => {
             idx={22}
           />
         </h1>
-        <h2>Frontend / React / React Native</h2>
+        <h2>Frontend Developer / React / React Native</h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>
       </div>
-      {/* <Logo /> */}
+      <Logo />
     </div>
   );
 };
