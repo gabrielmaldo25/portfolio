@@ -48,7 +48,7 @@
   .text-zone {
     width: 50%;
     h1 {
-      font-size: 53px;
+      font-size: 3.6vw;
       font-family: "Coolvetica";
       color: #a6a867;
       font-weight: 400;
@@ -86,10 +86,12 @@
       font-family: sans-serif;
       font-weight: 300;
       min-width: fit-content;
-      animation: pulse 1s;
+      opacity: 0;
+      animation: fadeIn 1s;
+      animation-fill-mode: forwards;
       @for $i from 1 through 5 {
         &:nth-of-type(#{$i}) {
-          animation-delay: #{$i * 0.3}s;
+          animation-delay: #{2+ ($i / 10)}s;
         }
       }
     }
@@ -109,7 +111,7 @@
   .about-page,
   .contact-page,
   .home-page {
-    padding: 0 8vh;
+    //padding: 0 8vh;
     .text-zone {
       width: 100%;
     }
@@ -118,5 +120,63 @@
     padding-top: 10%;
     margin-left: 0;
     height: calc(100vh - 6%);
+  }
+}
+
+@media only screen and (min-width: 280px) {
+  .about-page,
+  .contact-page,
+  .home-page {
+    .text-zone {
+      h1 {
+        font-size: 10vw;
+      }
+    }
+  }
+}
+
+@media (min-height: 500px) and (min-width: 580px) {
+  .about-page,
+  .contact-page,
+  .home-page {
+    .text-zone {
+      h1 {
+        font-size: 7vw;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .about-page,
+  .contact-page,
+  .home-page {
+    .text-zone {
+      h1 {
+        font-size: 3.5vw;
+      }
+    }
+  }
+}
+
+@media (min-height: 700px) and (min-width: 500px) {
+  .about-page,
+  .contact-page,
+  .home-page {
+    padding: 0 8vh;
+    .text-zone {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .about-page,
+  .contact-page,
+  .home-page {
+    padding: 2vh 10%;
+    .text-zone {
+      width: 50%;
+    }
   }
 }

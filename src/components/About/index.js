@@ -15,7 +15,11 @@ const About = () => {
     <div className="about-page">
       <div className="text-zone">
         <h1>
-          <AnimatedLetters strArray={"About me".split("")} idx={15} />
+          <AnimatedLetters
+            strArray={"About me".split("")}
+            idx={10}
+            letterClass={"text-animate"}
+          />
         </h1>
         <p>
           I am a self-taught person, with the goals of constantly training

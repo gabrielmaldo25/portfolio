@@ -7,13 +7,11 @@
   opacity: 0;
   animation: bounceIn 1s 1s;
   animation-fill-mode: forwards;
-  min-width: 10px;
-  text-size-adjust: auto;
+  min-width: 1vw;
 
   &.logo {
     font-family: "Inspiration", cursive;
-    //font-size: 1.5em;
-    text-size-adjust: auto;
+    // font-size: 11vw;
   }
 }
 

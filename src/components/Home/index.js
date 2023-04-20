@@ -8,7 +8,7 @@ import Logo from "./Logo";
 const Home = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const nameArray = "gabriel maldonado".split("");
-  const jobArray = "jr developer".split("");
+  const jobArray = "frontend developer".split("");
 
   return (
     <div className="home-page">
@@ -29,10 +29,10 @@ const Home = () => {
           <AnimatedLetters
             letterClass={letterClass}
             strArray={jobArray}
-            idx={22}
+            idx={15}
           />
         </h1>
-        <h2>Frontend Developer / React / React Native</h2>
+        <h2> React / React Native</h2>
         <Link to="/contact" className="flat-button">
           CONTACT ME
         </Link>

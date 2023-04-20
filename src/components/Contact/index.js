@@ -32,7 +32,11 @@ const Contact = () => {
       <div className="contact-page">
         <div className="text-zone">
           <h1>
-            <AnimatedLetters strArray={"Contact me".split("")} idx={15} />
+            <AnimatedLetters
+              strArray={"Contact me".split("")}
+              idx={15}
+              letterClass={"text-animate"}
+            />
           </h1>
           {/* <p>
             I am interested in new opportunities - especially on ambitious
