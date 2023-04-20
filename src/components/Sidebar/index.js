@@ -32,7 +32,7 @@ const Sidebar = () => {
         <Link
           target="_blank"
           rel="noreferrer"
-          href="https://github.com/gabrielmaldo25"
+          to="https://github.com/gabrielmaldo25"
         >
           <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
         </Link>
