@@ -1,12 +1,19 @@
 %default-inputs {
   width: 100%;
-  border: 1px solid #e3dc95;
+  //border: 1px solid #e3dc95;
   border-radius: 8px;
   background: transparent;
   height: 50px;
   font-size: 16px;
   color: #fff;
   box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e3dc95;
+  &:focus {
+    outline: none;
+    border-color: white;
+  }
 }
 
 .contact-form {
