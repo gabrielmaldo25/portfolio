@@ -90,7 +90,7 @@
       opacity: 0;
       animation: fadeIn 1s;
       animation-fill-mode: forwards;
-      @for $i from 1 through 5 {
+      @for $i from 1 through 10 {
         &:nth-of-type(#{$i}) {
           animation-delay: #{2+ ($i / 10)}s;
         }
