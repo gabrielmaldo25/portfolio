@@ -27,7 +27,7 @@ const myWork = [
         </p>
         <p>
           This portfolio is built with React and styled with SASS. I adapted the
-          design to fit more of my personal liking and adapt it to mobile
+          design to fit more of my personal liking and adapt it for mobile
           devices as well.
         </p>
         <p>
