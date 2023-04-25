@@ -5,6 +5,7 @@ import LogoS from "../../assets/images/logo-s.png";
 import LogoSubtitle from "../../assets/images/logo_sub.png";
 import {
   faBars,
+  faCode,
   faEnvelope,
   faHamburger,
   faHouse,
@@ -120,6 +121,18 @@ const Sidebar = () => {
                 <FontAwesomeIcon color="#4d4d4e" icon={faUser} />
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                exact="true"
+                activeclassname="active"
+                className="work-link"
+                to="/my.work"
+                onClick={menuPressed}
+              >
+                <FontAwesomeIcon color="#4d4d4e" icon={faCode} />
+              </NavLink>
+            </li>
+
             <li>
               <NavLink
                 exact="true"

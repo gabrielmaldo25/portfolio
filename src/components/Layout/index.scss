@@ -39,7 +39,8 @@
 
 .about-page,
 .contact-page,
-.home-page {
+.home-page,
+.work-page {
   display: flex;
   flex: 1;
   align-items: center;
@@ -110,7 +111,8 @@
 
   .about-page,
   .contact-page,
-  .home-page {
+  .home-page,
+  .work-page {
     //padding: 0 8vh;
     .text-zone {
       width: 100%;
@@ -126,7 +128,8 @@
 @media only screen and (min-width: 280px) {
   .about-page,
   .contact-page,
-  .home-page {
+  .home-page,
+  .work-page {
     .text-zone {
       h1 {
         font-size: 10vw;
@@ -138,7 +141,8 @@
 @media (min-height: 500px) and (min-width: 580px) {
   .about-page,
   .contact-page,
-  .home-page {
+  .home-page,
+  .work-page {
     .text-zone {
       h1 {
         font-size: 7vw;
@@ -150,7 +154,8 @@
 @media only screen and (min-width: 992px) {
   .about-page,
   .contact-page,
-  .home-page {
+  .home-page,
+  .work-page {
     .text-zone {
       h1 {
         font-size: 3.5vw;
@@ -162,7 +167,8 @@
 @media (min-height: 700px) and (min-width: 500px) {
   .about-page,
   .contact-page,
-  .home-page {
+  .home-page,
+  .work-page {
     padding: 0 8vh;
     .text-zone {
       width: 100%;
@@ -173,7 +179,8 @@
 @media (min-width: 1000px) {
   .about-page,
   .contact-page,
-  .home-page {
+  .home-page,
+  .work-page {
     padding: 2vh 10%;
     .text-zone {
       width: 50%;
